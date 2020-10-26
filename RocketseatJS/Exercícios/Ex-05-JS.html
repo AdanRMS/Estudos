@@ -18,12 +18,14 @@
                 habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
             }
         ];
-        var skills1 = []
-        for (const a of usuarios[0].habilidades) {
-            skills1 = a.join(', ')
+
+        for (usuario of usuarios) {
+            console.log(
+                "O " + usuario.nome + 
+                " possui as habilidades: " + usuario.habilidades.join(', ')
+            )
         }
-        console.log(skills1)
-            
+
     </script>
 </body>
 </html>
