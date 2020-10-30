@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        
+    </div>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        var containerElement = document.getElementById('app');
+        containerElement.appendChild(document.createElement('ul'));
+        var listaUL = document.querySelector('ul');
+        var i = 0
+
+        for(nome of nomes){
+            var criarListElement = document.createElement('li');
+            listaUL.appendChild(criarListElement).innerHTML = nome;
+
+        };
+    </script>
+</body>
+</html>
