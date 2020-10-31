@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        
+    </div>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        var containerElement = document.getElementById('app');
+
+        var input = containerElement.appendChild(document.createElement('input'));
+        input.setAttribute('type', 'text');
+        input.setAttribute('name', 'nome');
+
+        var butao = containerElement.appendChild(document.createElement('button'));
+        butao.innerHTML = 'Adicionar'
+        butao.setAttribute('onClick', 'adicionar()');
+
+        containerElement.appendChild(document.createElement('ul'));
+        var listaUL = document.querySelector('ul');
+
+        function adicionar(){
+            var text = input.value
+
+            var listElement = document.createElement('li');
+            listaUL.appendChild(listElement).innerHTML = text;
+
+            document.querySelector('input').value = '';
+        };
+
+        for(nome of nomes){
+            var listElement = document.createElement('li');
+            listaUL.appendChild(listElement).innerHTML = nome;
+        };
+    </script>
+</body>
+</html>
