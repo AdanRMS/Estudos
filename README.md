@@ -1,6 +1,6 @@
-![RocketSeat Logo](https://miro.medium.com/max/1200/1*fs0ScMc45X9QEwno8G414A.png "RocketSeat Logo")
-
 # Curso básico de JavaScript
+
+![RocketSeat Logo](https://miro.medium.com/max/1200/1*fs0ScMc45X9QEwno8G414A.png "RocketSeat Logo")
 
 ### Exercícios: Módulo 01
 
